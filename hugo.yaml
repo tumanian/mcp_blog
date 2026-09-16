@@ -1,0 +1,93 @@
+# Site config. Docs: https://github.com/adityatelange/hugo-PaperMod/wiki/Variables
+baseURL: https://mcp-blog.vercel.app/   # TODO: set to the real Vercel URL / custom domain
+title: Gurgen Tumanyan
+languageCode: en-us
+theme: PaperMod
+timeZone: America/Los_Angeles
+
+enableRobotsTXT: true
+buildDrafts: false
+buildFuture: false
+buildExpired: false
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+# Pagefind-free search: PaperMod uses fuse.js over this JSON index
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+params:
+  env: production
+  description: Notes and essays.
+  author: Gurgen Tumanyan
+  defaultTheme: auto
+  disableThemeToggle: false
+  ShowReadingTime: true
+  ShowShareButtons: false
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowRssButtonInSectionTermList: true
+  ShowToc: true
+  TocOpen: false
+  ShowWordCount: false
+  hideSummary: false
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: false
+  hidemeta: false
+
+  homeInfoParams:
+    Title: Hi.
+    Content: Notes and essays. Edit `homeInfoParams` in hugo.yaml.
+
+  socialIcons:
+    - name: github
+      url: https://github.com/tumanian
+    - name: rss
+      url: /index.xml
+
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    keys: ["title", "permalink", "summary", "content"]
+
+menu:
+  main:
+    - identifier: posts
+      name: Posts
+      url: /posts/
+      weight: 10
+    - identifier: archives
+      name: Archive
+      url: /archives/
+      weight: 20
+    - identifier: tags
+      name: Tags
+      url: /tags/
+      weight: 30
+    - identifier: search
+      name: Search
+      url: /search/
+      weight: 40
+    - identifier: about
+      name: About
+      url: /about/
+      weight: 50
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true   # allow raw HTML in markdown
+  highlight:
+    noClasses: false
+    lineNos: false
