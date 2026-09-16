@@ -1,0 +1,14 @@
+{{- /* Overrides PaperMod's partial: icons come from flat params so they can be set from env vars. */ -}}
+{{- $icons := slice }}
+{{- with site.Params.githubUrl }}{{ $icons = $icons | append (dict "name" "github" "url" .) }}{{ end }}
+{{- with site.Params.xUrl }}{{ $icons = $icons | append (dict "name" "x" "url" .) }}{{ end }}
+{{- with site.Params.linkedinUrl }}{{ $icons = $icons | append (dict "name" "linkedin" "url" .) }}{{ end }}
+{{- $icons = $icons | append (dict "name" "rss" "url" "/index.xml") }}
+<div class="social-icons" {{ with .align}}align="{{.}}" {{- end }}>
+    {{- range $icons }}
+    <a href="{{ trim .url " " | safeURL }}" target="_blank" rel="noopener noreferrer me"
+        title="{{ .name | title }}">
+        {{ partial "svg.html" . }}
+    </a>
+    {{- end }}
+</div>

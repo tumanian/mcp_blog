@@ -3,8 +3,8 @@
   "configurations": [
     {
       "name": "hugo",
-      "runtimeExecutable": "hugo",
-      "runtimeArgs": ["server", "-D", "--port", "1313", "--bind", "127.0.0.1"],
+      "runtimeExecutable": "./dev.sh",
+      "runtimeArgs": [],
       "port": 1313
     }
   ]

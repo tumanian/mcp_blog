@@ -1,6 +1,17 @@
 # Site config. Docs: https://github.com/adityatelange/hugo-PaperMod/wiki/Variables
-baseURL: https://tumanian.dev/
-title: Gurgen Tumanyan
+#
+# Anything identifying comes from the environment, not this file. Hugo maps
+# HUGO_<KEY> to top-level keys and HUGO_PARAMS_<KEY> to params. Set these in
+# Vercel (Settings > Environment Variables) and in local.env for `./dev.sh`:
+#   HUGO_BASEURL           https://example.com/
+#   HUGO_TITLE             site title (shown in the header and <title>)
+#   HUGO_PARAMS_AUTHOR     byline on posts
+#   HUGO_PARAMS_GITHUBURL  social icon; omit to hide
+#   HUGO_PARAMS_XURL       social icon; omit to hide
+#   HUGO_PARAMS_LINKEDINURL social icon; omit to hide
+#   HUGO_PARAMS_REPLYONX   X handle without @ for the button under posts; omit to hide
+baseURL: https://example.org/
+title: Blog
 languageCode: en-us
 theme: PaperMod
 timeZone: America/Los_Angeles
@@ -24,7 +35,7 @@ outputs:
 params:
   env: production
   description: Notes and essays.
-  author: Gurgen Tumanyan
+  author: ""
   defaultTheme: auto
   disableThemeToggle: false
   ShowReadingTime: true
@@ -47,11 +58,11 @@ params:
     Title: Hi.
     Content: Notes and essays. Edit `homeInfoParams` in hugo.yaml.
 
-  socialIcons:
-    - name: github
-      url: https://github.com/tumanian
-    - name: rss
-      url: /index.xml
+  # Social icons are built by layouts/_partials/social_icons.html from the
+  # *Url params above; RSS is always shown.
+  githubUrl: ""
+  xUrl: ""
+  linkedinUrl: ""
 
   fuseOpts:
     isCaseSensitive: false
