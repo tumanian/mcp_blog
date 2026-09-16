@@ -1,5 +1,5 @@
 # Site config. Docs: https://github.com/adityatelange/hugo-PaperMod/wiki/Variables
-baseURL: https://mcp-blog.vercel.app/   # TODO: set to the real Vercel URL / custom domain
+baseURL: https://tumanian.dev/
 title: Gurgen Tumanyan
 languageCode: en-us
 theme: PaperMod
