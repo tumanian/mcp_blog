@@ -1,6 +1,7 @@
-public/
-resources/_gen/
-.hugo_build.lock
 .DS_Store
+.env*
+.hugo_build.lock
 .vercel/
 local.env
+public/
+resources/_gen/
