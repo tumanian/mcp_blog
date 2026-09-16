@@ -39,7 +39,8 @@ params:
   hideSummary: false
   disableSpecial1stPost: false
   disableScrollToTop: false
-  comments: false
+  comments: true          # renders layouts/_partials/comments.html (the Reply on X button)
+  replyOnX: ""           # X handle without @; empty hides the button. Set via HUGO_PARAMS_REPLYONX in Vercel.
   hidemeta: false
 
   homeInfoParams:

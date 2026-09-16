@@ -1,0 +1,19 @@
+.reply-on-x {
+    margin-top: var(--content-gap);
+    display: flex;
+    justify-content: center;
+}
+.reply-on-x a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: var(--code-bg);
+    color: var(--primary);
+    font-size: 15px;
+}
+.reply-on-x a:hover {
+    background: var(--border);
+}
