@@ -1,5 +1,5 @@
 ---
-title: "Reverse alignment, with a publish button"
+title: "How to spin up a blog claude can push to (with skills)"
 date: 2026-09-16T18:16:19-07:00
 tags: ["meta", "claude"]
 description: "Call it reverse alignment, but I use claude as a thought partner."
