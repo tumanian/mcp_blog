@@ -34,7 +34,7 @@ outputs:
 
 params:
   env: production
-  description: Notes and essays.
+  description: Notes on systems, data, and whatever I happen to be musing about.
   author: ""
   defaultTheme: auto
   disableThemeToggle: false
@@ -56,7 +56,7 @@ params:
 
   homeInfoParams:
     Title: Hi.
-    Content: Notes and essays. Edit `homeInfoParams` in hugo.yaml.
+    Content: Notes on systems, data, and whatever I happen to be musing about.
 
   # Social icons are built by layouts/_partials/social_icons.html from the
   # *Url params above; RSS is always shown.
