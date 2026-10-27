@@ -98,6 +98,8 @@ menu:
 
 markup:
   goldmark:
+    parser:
+      wrapStandAloneImageWithinParagraph: false  # lets captioned images render as <figure>, not <p><figure>
     renderer:
       unsafe: true   # allow raw HTML in markdown
   highlight:
