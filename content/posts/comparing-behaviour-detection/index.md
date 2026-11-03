@@ -2,7 +2,7 @@
 title: "Experiments in comparing behaviour detection"
 date: 2026-11-03T15:33:08-08:00
 tags: ["ai", "interpretability"]
-description: "Comparing residual, MLP-neuron and SAE probes for behaviour detection, and why their thresholds break on mixed traffic."
+description: "Comparing residual, MLP-neuron and SAE probes for behaviour detection, and why their thresholds break on mixed traffic"
 draft: false
 ---
 
