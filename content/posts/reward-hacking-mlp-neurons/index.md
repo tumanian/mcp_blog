@@ -4,6 +4,9 @@ date: 2026-10-26T20:05:22-07:00
 tags: ["ai", "interpretability"]
 description: "Tried an experiment to see whether reward hacking shows up in MLP neurons, and whether steering those neurons can make it stop."
 draft: false
+cover:
+  image: "hint-response-by-layer.png"
+  relative: true
 ---
 
 Tried an experiment to see whether reward hacking shows up in MLP neurons, and whether steering those neurons can make it stop. Started with a “two brains” setup, then put that aside and used existing Qwen3-4B models from the rl-rewardhacking project. These had already learned the exploit through reinforcement learning. No training needed on my side.
