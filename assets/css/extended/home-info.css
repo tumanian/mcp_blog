@@ -1,0 +1,11 @@
+/* Tighter home intro: drop the theme's 320px (260px mobile) minimum height
+   and vertical centering, so the tagline and icons sit right under the nav. */
+.first-entry.home-info {
+    min-height: 0;
+    justify-content: flex-start;
+    margin: 8px 0 24px 0;
+}
+
+.first-entry.home-info .entry-footer {
+    margin-top: 12px;
+}
