@@ -4,6 +4,9 @@ date: 2026-11-03T15:33:08-08:00
 tags: ["ai", "interpretability"]
 description: "Comparing residual, MLP-neuron and SAE probes for behaviour detection, and why their thresholds break on mixed traffic."
 draft: false
+cover:
+  image: "auc-by-source.png"
+  relative: true
 ---
 
 As I was following the recent discussion on whether the neural networks are already clean, and my previous experiments on monitoring non-benfictal behaviors, and I as I wanted to  christallzie my own learnings I had an idea to  compare these methods. Few I was thinking about were the standard residual linear probes (checking for pooling mechanisms as well as they can have different performance tradeoffs), SAE classifiers, and direct probes on MLPs. Basically some standard baseline and whatever was trending on X the last few weeks.  
