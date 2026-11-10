@@ -65,7 +65,7 @@ Replacing the activations of 200 importance-ranked neurons with non-hacking aver
 
 *Importance: each neuron’s integrated-gradients share of the drop in the probability of writing def run_tests when all 5,000 are moved to the non-hackers’ average together. Scored on test-split answers; the chart is on 353 held-out problems.*
 
-Could we get it down to two neurons? Somewhat. Pushing L17N2488 down and L18N843 up brought fake tests to 30%, 71% and 75% across three training seeds. Random neurons did almost nothing. But coding fell nine percentage points in one seed, beyond the five-point limit i had set. Five neurons together broke coding badly. More steering wasn’t better.
+Could we get it down to two neurons? Somewhat. Pushing L17N2488 down and L18N843 up brought fake tests to 30%, 71% and 75% across three training seeds. Random neurons did almost nothing. But coding fell nine percentage points in one seed, beyond the five-point limit I had set. Five neurons together broke coding badly. More steering wasn’t better.
 
 | Push (held-out problems) | Fake tests, seeds 1 / 42 / 65 | Coding, seeds 1 / 42 / 65 |
 | --- | --- | --- |
