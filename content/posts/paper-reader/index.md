@@ -4,6 +4,9 @@ date: 2026-07-12T09:00:00-07:00
 tags: ["ai", "tools", "building"]
 description: "How I built paper-reader.dev with Claude and Cursor in two weeks, and what I learned about working with AI coding agents."
 draft: false
+cover:
+  image: "paper-reader-cover.png"
+  relative: true
 ---
 
 I built [paper-reader.dev](https://paper-reader.dev) to help me parse through ML papers. As a backend engineer by training, building anything with UI has always been out of reach for me. In one or two weeks with modern tools, I opened up the other half of my craft.
