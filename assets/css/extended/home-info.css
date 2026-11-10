@@ -9,3 +9,17 @@
 .first-entry.home-info .entry-footer {
     margin-top: 12px;
 }
+
+/* Smaller social icons in the home intro. */
+.first-entry.home-info .entry-footer {
+    margin-top: 6px;
+}
+
+.home-info .social-icons a {
+    padding: 4px 6px;
+}
+
+.home-info .social-icons a svg {
+    height: 16px;
+    width: 16px;
+}
