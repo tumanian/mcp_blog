@@ -9,4 +9,4 @@ cover:
   relative: true
 ---
 
-Exploring concept neurons on Qween, steering on "What should i learn next" prompt.
+Exploring concept neurons on Qwen, steering on the "What should I learn next?" prompt.
