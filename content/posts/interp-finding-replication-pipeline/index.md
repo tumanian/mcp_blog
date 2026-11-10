@@ -9,4 +9,4 @@ cover:
   relative: true
 ---
 
-i built a pipeline that can take on a interp paper describing behaviours and replicate it across models https://github.com/tumanian/interp_claim_lib
+i built a pipeline that can take an interp paper describing behaviours and replicate it across models https://github.com/tumanian/interp_claim_lib
