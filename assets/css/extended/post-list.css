@@ -8,3 +8,21 @@
     order: -1;
     margin-bottom: 12px;
 }
+
+/* Narrower images: covers in the post list, covers on post pages, and inline post images. */
+.post-entry .entry-cover {
+    align-items: center;
+}
+
+.post-entry .entry-cover img {
+    max-width: 560px;
+    width: 100%;
+}
+
+.post-single .entry-cover img,
+.post-content img {
+    max-width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
