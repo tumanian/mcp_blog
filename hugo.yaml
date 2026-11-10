@@ -55,7 +55,7 @@ params:
   hidemeta: false
 
   homeInfoParams:
-    Content: Notes on systems, data, and whatever I happen to be musing about.
+    Content: Notes on systems, experiments, and random musings.
 
   # Social icons are built by layouts/_partials/social_icons.html from the
   # *Url params above; RSS is always shown.
