@@ -6,7 +6,7 @@ description: "Call it reverse alignment, but I use claude as a thought partner."
 draft: false
 ---
 
-Call it reverse alignment, but happen to use claude as a thought partner, for an ongoing back-and-forth along whatever is going on in my mind, be that reading, research, etc. Sometimes I come at thoughts that may be novel, and I would want to publish in a blog - both in an unlikely scenario that it gets discovered by someone more knowledgable or just for navel-gazing later on. As I use claude heavily to edit my writing as well - I did wonder if there is a quick way to push the thoughts out to a blog, but there didn't seem any. Something that I could tell claude to "this is an interesting. Thought, let's polish and publish it" directly from claude chat or cowork.
+Call it reverse alignment, but happen to use claude as a thought partner, for an ongoing back-and-forth along whatever is going on in my mind, be that reading, research, etc. Sometimes I come at thoughts that may be novel, and I would want to publish in a blog - both in an unlikely scenario that it gets discovered by someone more knowledgable or just for navel-gazing later on. As I use claude heavily to edit my writing as well - I did wonder if there is a quick way to push the thoughts out to a blog, but there didn't seem any. Something that I could tell claude to "this is an interesting thought, let's polish and publish it" directly from claude chat or cowork.
 
 So I built it, using claude obviously.
 
