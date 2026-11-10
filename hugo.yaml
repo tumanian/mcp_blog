@@ -55,7 +55,6 @@ params:
   hidemeta: false
 
   homeInfoParams:
-    Title: Hi.
     Content: Notes on systems, data, and whatever I happen to be musing about.
 
   # Social icons are built by layouts/_partials/social_icons.html from the
