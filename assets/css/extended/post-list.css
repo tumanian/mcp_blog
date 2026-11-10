@@ -1,0 +1,10 @@
+/* Post list: show the title above the cover image instead of below it. */
+.post-entry {
+    display: flex;
+    flex-direction: column;
+}
+
+.post-entry > .entry-header {
+    order: -1;
+    margin-bottom: 12px;
+}
