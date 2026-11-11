@@ -5,11 +5,9 @@ tags: ["ai", "interpretability"]
 description: ""
 draft: false
 cover:
-  image: "noone_story.png"
+  image: "noone_story.gif"
   relative: true
 ---
-
-![EGO DEATH Qwenn](noone_story.gif)
 
 Adding this vector  at layer 13 of Qwen3-8B, creates empty responses on questions like “Who are you?”, “Is anyone there?”.  Other tasks, role-play characters and refusals work as before.
 
