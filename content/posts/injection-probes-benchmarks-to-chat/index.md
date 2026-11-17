@@ -4,6 +4,9 @@ date: 2026-11-17T13:09:44-08:00
 tags: []
 description: "In the previous post I discussed the issue of recall collapsing on out-of-training data, especially on a simulation of the live data stream."
 draft: false
+cover:
+  image: "injection-probes-cover.png"
+  relative: true
 ---
 
 In the [previous post](https://www.tumanian.dev/posts/comparing-behaviour-detection/) I discussed the issue of recall collapsing on out-of-training data, especially on a simulation of the live data stream. To that end I ran a new set of experiments, landing 1) improved recall and 2) a simulation of what a live tracer would look like. The key unblock here was using live samples as negatives in training, and planting synthetic tracers into real messages to measure the probe where it actually runs.
