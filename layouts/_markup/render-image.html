@@ -1,0 +1,35 @@
+{{- /* Overrides PaperMod's hook. Images sit next to the post's index.md:
+  ![alt](photo.png)                    plain image
+  ![alt](photo.png "Caption text")     image with a caption underneath
+  Raster images wider than 1600px are downscaled at build time; width/height
+  are set so the page doesn't jump while images load. GIFs and SVGs pass through. */ -}}
+{{- $u := urls.Parse .Destination -}}
+{{- $src := $u.String -}}
+{{- $w := 0 -}}
+{{- $h := 0 -}}
+{{- if not $u.IsAbs -}}
+  {{- $path := strings.TrimPrefix "./" $u.Path -}}
+  {{- with or (.PageInner.Resources.Get $path) (resources.Get $path) -}}
+    {{- $img := . -}}
+    {{- if and (eq .ResourceType "image") (in (slice "jpeg" "png" "webp") .MediaType.SubType) -}}
+      {{- if gt .Width 1600 -}}{{- $img = .Resize "1600x" -}}{{- end -}}
+      {{- $w = $img.Width -}}
+      {{- $h = $img.Height -}}
+    {{- end -}}
+    {{- $src = $img.RelPermalink -}}
+    {{- with $u.RawQuery -}}{{- $src = printf "%s?%s" $src . -}}{{- end -}}
+    {{- with $u.Fragment -}}{{- $src = printf "%s#%s" $src . -}}{{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- $attributes := merge .Attributes (dict "alt" .Text "src" $src "loading" "lazy" "decoding" "async") -}}
+{{- if $w -}}{{- $attributes = merge $attributes (dict "width" (string $w) "height" (string $h)) -}}{{- end -}}
+{{- $tag := "" -}}
+{{- range $k, $v := $attributes -}}
+  {{- if $v -}}{{- $tag = printf "%s %s=%q" $tag $k (string $v) -}}{{- end -}}
+{{- end -}}
+{{- if .Title -}}
+<figure class="post-image"><img{{ $tag | safeHTMLAttr }}><figcaption>{{ .Title | markdownify }}</figcaption></figure>
+{{- else -}}
+<img{{ $tag | safeHTMLAttr }}>
+{{- end -}}
+{{- /**/ -}}

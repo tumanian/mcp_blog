@@ -1,0 +1,16 @@
+/* Images in post bodies (layouts/_markup/render-image.html). */
+.post-content img {
+  height: auto;
+  max-width: 100%;
+}
+
+.post-content figure.post-image {
+  margin: 1.5rem 0;
+}
+
+.post-content figure.post-image figcaption {
+  color: var(--secondary);
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
+  text-align: center;
+}
